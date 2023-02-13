@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap');
+
+body{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.cabecalho{
+    background: linear-gradient(89.98deg, #E8E8E8 0.53%, #8193F2 99.98%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    font-size: 25px;
+}
+
+.cabecalho-logo{
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    transition: all .2s;
+}
+
+.cabecalho-logo:hover{
+    color: black;
+}
+
+.cabecalho-links ul{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    list-style: none;
+    font-size: 19px;
+}
+
+.cabecalho-links a{
+    text-decoration: none;
+    color: white;
+    transition: all .2s;
+}
+
+.cabecalho-links a:hover{
+    color: black;
+}
+
+.cabecalho-buttons{
+    display: flex;
+    gap: 1em;
+    cursor: pointer;
+}
+
+.cabecalho-buttons-login{
+    background: none;
+    border: none;
+    color: white;
+    transition: all .2s;
+    cursor: pointer;
+}
+
+.cabecalho-buttons-login:hover{
+    color: black;
+}
+
+.cabecalho-buttons-cadastro{
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    transition: all .2s;
+}
+
+.cabecalho-buttons-cadastro:hover{
+    color: black;
+}
+
+/* ESTILIZAÇÃO MAIN */
+main{
+    background-image: url(../img/overlay.png), url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+
+}
+
+section{
+    display: flex;
+}
+
+.container-content{
+    padding: 3%;
+    padding-top: 7%;
+    padding-left: 7%;
+}
+
+.container-content h1, .container-content h2{
+    font-size: 40px;
+}
+
+.container-content p{
+    font-size: 25px;
+    padding-left: 3%;
+}
+
+.container-content ul{
+    padding-left: 5%;
+}
+.container-content li{
+    font-size: 25px;
+}
+
+/*------CARROSSEL DE IMGS------*/
+.container-slider{
+    display: flex;
+    width: 30%;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding-right: 40px;
+}
+
+.container-images{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 700px;
+}
+
+.slider{
+    position: absolute;
+    width: 210px;
+}
+
+#prev-button, #next-button{
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+#prev-button img, #next-button img{
+    width: 100%;
+    height: 100%;
+    background: none;
+}
+
+#prev-button{
+    transform: rotate(90deg);
+}
+
+#next-button{
+    transform: rotate(270deg);
+}
+
+footer{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    left: 500px;
+    bottom: 0px;
+}
+
+footer img{
+    width: 150px;
+}

@@ -8,29 +8,34 @@
         <meta name="description" content="Reus-e é um marketplace voltado para o comércio de peças de computadores.">
         <meta name="keywords" content="Reus-e, marketplace, computadores, peças">
 
+        <link rel="stylesheet" href="./style/normalize.css">
+        <link rel="stylesheet" href="./style/estilo.css">
+
     </head>
 
     <body>
-        <header>
-            <a href="/index.html">Reus-e</a>
+        <header class="cabecalho">
+            <a href="/index.html" class="cabecalho-logo">Reus-e</a>
 
-            <nav>
+            <nav class="cabecalho-links">
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Sobre nós</a></li>
-                    <li><a href="#">Contat0</a></li>
+                    <li><a href="#">Contato</a></li>
                 </ul>
+           
             </nav>
+            
+            <div class="cabecalho-buttons">
+                <button class="cabecalho-buttons-login">Login</button>
+                <a href="#" class="cabecalho-buttons-cadastro">Cadastre-se</a>
+            </div> 
 
-            <div>
-                <button>Login</button>
-                <a href="#">Cadastre-se</a>
-            </div>
         </header>
 
         <main>
             <section>
-                <div>
+                <div class="container-content">
                     <h1>O que é Reus-e?</h1>
                     <p>Reus-e é um marketplace voltado para o comércio de peças de computadores usadas, seminovas ou, até mesmo, novas e prontas para uso.</p>
 
@@ -44,7 +49,7 @@
 
                 <div class="container-slider">
 
-                    <button id="prev-button"><img src="./img/arrow.png" alt="seta de voltar do carrosel"></button>
+                    <button id="prev-button"><img src="./img/seta.png" alt="seta de voltar do carrosel"></button>
 
                     <div class="container-images">
                         <img src="./img/inicial.png" alt="tela de inicio do reuse" class="slider">
@@ -56,17 +61,15 @@
                         <img src="./img/fim.png" alt="tela pós pagamento do reuse" class="slider">
                     </div>
 
-                    <button id="next-button"><img src="./img/arrow.png" alt="seta de avançar do carrosel"></button>
+                    <button id="next-button"><img src="./img/seta.png" alt="seta de avançar do carrosel"></button>
 
                 </div>
             </section>
         </main>
-
         <footer>
-            <img src="./img/app store.svg" alt="loja da apple">
-            <img src="./img/galaxy store.svg" alt="loja do galaxy">
-            <img src="./img/google play.svg" alt="loja do google">
-        </footer>    
-
+            <a href="#"><img src="./img/app store.svg" alt="loja da apple"></a>
+            <a href="#"><img src="./img/galaxy store.svg" alt="loja do galaxy"></a>
+            <a href="#"><img src="./img/google play.svg" alt="loja do google"></a>
+        </footer>
     </body>
 </html>
