@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+
+        <title>Reus-e</title>
+        <meta charset="utf=8">
+        <meta name="author" content="Leo">
+        <meta name="description" content="Reus-e é um marketplace voltado para o comércio de peças de computadores.">
+        <meta name="keywords" content="Reus-e, marketplace, computadores, peças">
+
+        <link rel="stylesheet" href="./style/normalize.css">
+        <link rel="stylesheet" href="./style/estilo.css">
+
+    </head>
+
+    <body>
+        <header class="cabecalho">
+            <a href="/index.html" class="cabecalho-logo">Reus-e</a>
+
+            <nav class="cabecalho-links">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sobre nós</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+           
+            </nav>
+            
+            <div class="cabecalho-buttons">
+                <button id="open" class="cabecalho-buttons-login">Login</button>
+                <a href="#" class="cabecalho-buttons-cadastro">Cadastre-se</a>
+            </div> 
+
+        </header>
+
+        <main>
+
+            <section>
+
+                <div class="container-content">
+
+                    <h1>O que é Reus-e?</h1>
+                    <p>Reus-e é um marketplace voltado para o comércio de peças de computadores usadas, seminovas ou, até mesmo, novas e prontas para uso.</p>
+
+                    <h2>Com Reus-e você:</h2>
+                    <ul>
+                        <li>Encontra diversidade de produtos e peças</li>
+                        <li>Estimula a reutilização de peças e equipamentos</li>
+                        <li>Contribui com o meio ambiente</li>
+                    </ul>
+
+                </div>
+
+                <div class="container-slider">
+
+                    <button id="prev-button"><img src="./img/seta.png" alt="seta de voltar do carrosel"></button>
+
+                    <div class="container-images">
+                        <img src="./img/inicial.png" alt="tela de inicio do reuse" class="slider on">
+                        <img src="./img/cadastro.png" alt="tela de cadastro do reuse" class="slider">
+                        <img src="./img/login.png" alt="tela de login do reuse" class="slider">
+                        <img src="./img/home.png" alt="tela home do reuse" class="slider">
+                        <img src="./img/carrinho.png" alt="tela do carrinho do reuse" class="slider">
+                        <img src="./img/pagamento.png" alt="tela de pagamento do reuse" class="slider">
+                        <img src="./img/fim.png" alt="tela pós pagamento do reuse" class="slider">
+                    
+                    </div>
+
+                    <button id="next-button"><img src="./img/seta.png" alt="seta de avançar do carrosel"></button>
+
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+
+            <a href="#"><img src="./img/app store.svg" alt="loja da apple"></a>
+            <a href="#"><img src="./img/galaxy store.svg" alt="loja do galaxy"></a>
+            <a href="#"><img src="./img/google play.svg" alt="loja do google"></a>
+        
+        </footer>
+
+        <!--    Código do popup -->
+        <div class="popup-container" id="container">
+
+            <div class="login">
+
+                <button id="close" class="login-fechar">&times;</button>
+
+                <form action="#" method="#" class="form-login">
+
+                    <fieldset class="form-login-fieldset">
+
+                        <legend class="fieldset-legend">Login</legend>
+
+                        <label for="email">E-mail</label>
+                        <input type="text" id="email" name="emai" autofocus>
+
+                        <label for="senha">Senha</label>
+                        <input type="password" id="senha" name="senha">
+
+                        <input type="submit" value="Entrar" class="entrar">
+                    
+                    </fieldset>
+                
+                </form>
+            
+            </div>
+        
+        </div>
+
+        <script src="./scripts/login.js" defer></script>
+        <script src="./scripts/carrossel.js" defer></script>
+    
+    </body>
+</html>
