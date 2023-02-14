@@ -30,7 +30,7 @@ body{
 .cabecalho-links ul{
     display: flex;
     flex-direction: row;
-    gap: 1em;
+    gap: 3em;
     list-style: none;
     font-size: 19px;
 }
